@@ -1,8 +1,6 @@
 package com.example.administrator.myapplication.utils;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.os.Build;
 import android.view.View;
 

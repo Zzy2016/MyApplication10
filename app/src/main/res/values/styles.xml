@@ -16,4 +16,21 @@
         <item name="android:fitsSystemWindows">true</item>
     </style>
 
+    
+    <style name="Animation_Activity" parent="AppTheme">
+
+        <item name="android:activityOpenEnterAnimation">@anim/left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/left_out</item>
+    </style>
+
+
+    <style name="style_tab_text">
+        <item name="android:textColor">@color/selector_tab_text_color</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:drawableTop">@drawable/selected</item>
+    </style>
 </resources>
