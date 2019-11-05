@@ -2,11 +2,8 @@ package com.example.administrator.myapplication.activity;
 
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.CompoundButton;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -41,9 +38,6 @@ public class ThreadActivity extends AppCompatActivity {
         radioButton3 = (RadioButton) findViewById(R.id.radio_button3);
         radioButton4 = (RadioButton) findViewById(R.id.radio_button4);
 
-
-
-
         reSize(radioButton1);
         reSize(radioButton2);
         reSize(radioButton3);
@@ -57,40 +51,23 @@ public class ThreadActivity extends AppCompatActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                Log.e("radiogroup",checkedId+"   "+group);
-//
-//                radioButton1.setText(radioButton1.isSelected()+"");
-//                radioButton2.setText(radioButton2.isSelected()+"");
-//                radioButton3.setText(radioButton3.isSelected()+"");
-//                radioButton4.setText(radioButton4.isSelected()+"");
                 refreshPage(checkedId);
-
             }
         });
-
-
-//        radioButton1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//
-//            }
-//        });
 
     }
 
 
-    public void reSize(RadioButton radioButton){
-        Rect rect=new Rect();
-        rect.set(0,0,60,60);    //距离父窗体的距离，可以理解为左上和右下的坐标
-        Drawable[] drawables = radioButton.getCompoundDrawables();
-        drawables[1].setBounds(rect);  //取出上边的图片设置大小
+    public void reSize(RadioButton radioButton) {
+        Rect rect = new Rect();//矩形类
+        rect.set(0, 0, 60, 60);    //距离父窗体的距离，可以理解为左上和右下的坐标
+        Drawable[] drawables = radioButton.getCompoundDrawables();  //返回 left  top  right  bottom
+        drawables[1].setBounds(rect);  //取出上边的图片设置大小  //drawables[1]值 top
         radioButton.setCompoundDrawables(null, drawables[1], null, null);
     }
 
 
-
-
-//    刷新按钮 页面
+    //    刷新按钮 页面
     public void refreshPage(int checkedId) {
         switch (checkedId) {
             case R.id.radio_button1:
