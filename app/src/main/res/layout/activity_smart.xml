@@ -4,42 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:fitsSystemWindows="true"
     tools:context=".activity.SmartActivity">
 
-    <com.scwang.smartrefresh.layout.SmartRefreshLayout
-        android:id="@+id/smartRefreshLayout"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="50dp"
+        android:text="分支2"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.scwang.smartrefresh.layout.header.ClassicsHeader
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+    <!--android:id="@+id/smartRefreshLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
 
-        <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:gravity="center"-->
-        <!--android:background="#444"-->
-        <!--android:textColor="#fff"-->
-        <!--android:text="看看我会不会变成Header"/>-->
+    <!--<com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#444"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="看看我会不会变成Header"/>&ndash;&gt;-->
 
-        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:gravity="center"-->
-        <!--android:background="#444"-->
-        <!--android:textColor="#fff"-->
-        <!--android:text="正在加载"/>-->
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/recyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
 
-    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <!--<com.scwang.smartrefresh.layout.footer.ClassicsFooter-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#444"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="正在加载"/>&ndash;&gt;-->
+
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
 
 </android.support.constraint.ConstraintLayout>
