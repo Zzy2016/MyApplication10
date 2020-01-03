@@ -16,7 +16,7 @@
         <item name="android:fitsSystemWindows">true</item>
     </style>
 
-    
+
     <style name="Animation_Activity" parent="AppTheme">
 
         <item name="android:activityOpenEnterAnimation">@anim/left_in</item>
@@ -33,4 +33,18 @@
         <item name="android:includeFontPadding">false</item>
         <item name="android:drawableTop">@drawable/selected</item>
     </style>
+
+    <!--透明主题-->
+    <style name="MainTheme" parent="AppTheme">
+
+        <!--<item name="android:windowTranslucentStatus" tools:targetApi="kitkat">false</item>-->
+        <!--<item name="android:windowTranslucentNavigation" tools:ignore="NewApi">true</item>-->
+        <!--<item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <!--<item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+
 </resources>

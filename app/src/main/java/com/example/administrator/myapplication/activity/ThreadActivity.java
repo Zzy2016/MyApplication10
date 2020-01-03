@@ -57,7 +57,7 @@ public class ThreadActivity extends AppCompatActivity {
 
     }
 
-
+    //    设置radiobutton drawableTop 大小
     public void reSize(RadioButton radioButton) {
         Rect rect = new Rect();//矩形类
         rect.set(0, 0, 60, 60);    //距离父窗体的距离，可以理解为左上和右下的坐标
@@ -67,7 +67,7 @@ public class ThreadActivity extends AppCompatActivity {
     }
 
 
-    //    刷新按钮 页面
+    //    radiobutton 点击事件  刷新按钮 页面
     public void refreshPage(int checkedId) {
         switch (checkedId) {
             case R.id.radio_button1:
