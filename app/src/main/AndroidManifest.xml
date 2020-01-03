@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.myapplication">
 
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,17 +11,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/Animation_Activity" />
         <activity
             android:name=".activity.SmartActivity"
-            android:theme="@style/SmartTheme">
+            android:theme="@style/SmartTheme" />
+        <activity android:name=".activity.SecondActivity" />
+        <activity android:name=".activity.ThreadActivity" >
+
+        </activity>
+        <activity
+            android:name=".activity.FourtyActivity"
+            android:theme="@style/MainTheme"></activity>
+        <activity android:name=".activity.EditActivity">
+
+        </activity>
+        <activity android:name=".activity.TestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SecondActivity"></activity>
     </application>
 
 </manifest>
